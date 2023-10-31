@@ -18,3 +18,16 @@ export default class NumberSchema {
     return this;
   }
 }
+/* class Hours {
+  validators = [(value) => typeof value === 'number' && value >= 0 && Number.isInteger(value)];
+
+  isValid(value) {
+    return this.validators.every((validator) => validator(value));
+  }
+
+  setRange(min, max) {
+    const validator = (value) => (value != null ? value < max : false);
+    this.validators.push(validator);
+    return this;
+  }
+} */
